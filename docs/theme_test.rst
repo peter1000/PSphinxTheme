@@ -1,0 +1,566 @@
+.. index:: P-Sphinx Theme; feature test
+
+
+=============================
+"P-Sphinx Theme" Feature Test
+=============================
+
+This page contains examples of various features of the *P-Sphinx Theme*. It's mainly useful internally, to make sure
+everything is displaying correctly.
+
+
+.. index:: Literals; literals example, Examples; literals / quoted text options
+
+
+Inline Text
+===========
+Inline literal: ``literal text``
+
+
+samp literal with **literal variable** using the *P-Sphinx Theme extension* :mod:`~PSphinxTheme.ext.index_styling`::
+
+   :samp:`this is a {variable}`
+
+... and it will be rendered as:
+
+   :samp:`this is a {variable}`
+
+
+
+.. index:: Examples; external references / diverse options
+
+External links are prefixed with an arrow: `<http://www.google.com>`_.
+
+But email links are not prefixed: bob@example.com.
+
+Issue tracker link: :issue:`1`.
+
+
+.. index:: Admonitions; admonition examples
+
+Admonition Styles
+=================
+
+.. admonition:: MyTest
+
+   this uses the ``.. admonition:: syntax```
+
+
+.. todo::
+
+   This is a todo message.
+
+   With some additional next on another line.
+
+
+.. deprecated:: XXX This is a deprecation warning.
+
+
+.. rst-class:: floater
+.. note::
+   This is a floating note.
+
+|
+|
+|
+|
+
+.. note::
+   This is a note.
+
+.. tip::
+
+   This is a tip.
+
+.. important::
+
+   This is important.
+
+.. warning::
+
+   This is a warning.
+
+.. seealso::
+
+   This is a "see also" message.
+
+.. seealso:: modules :py:mod:`zipfile`, :py:mod:`tarfile`
+
+.. seealso::
+
+   Module :py:mod:`zipfile`
+      Documentation of the :py:mod:`zipfile` standard module.
+
+   `GNU tar manual, Basic Tar Format <http://link>`_
+      Documentation for tar archive files, including GNU tar extensions.
+
+.. optional::
+
+   This is optional.
+
+
+.. example:: Evaluate a query using different indexes javascript:
+
+   .. code-block:: javascript
+
+      db.inventory.find( { type: 'food' } ).hint( { type: 1 } ).explain()
+      db.inventory.find( { type: 'food' } ).hint( { type: 1, name: 1 } ).explain()
+
+   These return the statistics regarding the execution of the query
+   using the respective index.
+
+
+.. example:: A Python code block but maybe one should use the ``python-example`` admonition instead
+
+   .. code-block:: python
+
+      # for loop
+      for name in names_list:
+         print(name)
+
+.. javascript-example:: Evaluate a query using different indexes javascript:
+
+   .. code-block:: javascript
+
+      db.inventory.find( { type: 'food' } ).hint( { type: 1 } ).explain()
+      db.inventory.find( { type: 'food' } ).hint( { type: 1, name: 1 } ).explain()
+
+   These return the statistics regarding the execution of the query
+   using the respective index.
+
+
+.. shell-example:: Terminal usage
+
+   .. code-block:: sh
+
+      $ rm -rf *
+
+
+.. json-example:: use the *pygments* **json** highlighter
+
+   .. code-block:: json
+
+      {
+         "first": "John",
+         "last": "Doe",
+         "age": 39,
+         "interests": [
+            "Reading",
+            "Mountain Biking",
+            "Hacking"
+         ],
+         "registered": true,
+         "salary": 70000,
+         "sex": "M"
+      }
+
+
+.. lconf-example:: at the moment use the *pygments* **yaml** highlighter
+
+   .. code-block:: yaml
+
+      ___SECTION :: EXAMPLE 2
+      first :: John
+      last :: Doe
+      age :: 39
+      # Comment-Line: Key-Value-List
+      - interests
+         Reading
+         Mountain Biking
+         Hacking
+      registered :: True
+      salary :: 70000
+      sex :: M
+      ___END
+
+
+
+
+.. rst-class:: floater
+.. python-example:: Dict usage floater example
+
+   .. code-block:: python
+
+      for key in mydict:
+         print(key)
+
+|
+|
+|
+|
+|
+|
+
+.. index:: Admonitions; topic examples
+
+.. _topic:
+
+Topics
+------
+
+.. topic:: Lorem ipsum
+
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+   aliqua.
+
+
+
+.. index:: Headings; headers examples
+
+Headings
+========
+
+.. raw:: html
+
+   <h1>H1: Lorem ipsum dolor sit amet</h1>
+
+Lorem ipsum dolor sit amet, **consectetur adipisicing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. *Ut enim ad minim* veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+.. raw:: html
+
+   <h2>H2: Lorem ipsum dolor sit amet</h2>
+
+Lorem ipsum dolor sit amet, **consectetur adipisicing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. *Ut enim ad minim* veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+.. raw:: html
+
+   <h3>H3: Lorem ipsum dolor sit amet</h3>
+
+Lorem ipsum dolor sit amet, **consectetur adipisicing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. *Ut enim ad minim* veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+.. raw:: html
+
+   <h4>H4: Lorem ipsum dolor sit amet</h4>
+
+Lorem ipsum dolor sit amet, **consectetur adipisicing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. *Ut enim ad minim* veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+.. raw:: html
+
+   <h5>H5: Lorem ipsum dolor sit amet</h5>
+
+Lorem ipsum dolor sit amet, **consectetur adipisicing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. *Ut enim ad minim* veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+.. raw:: html
+
+   <h6>H6: Lorem ipsum dolor sit amet</h6>
+
+Lorem ipsum dolor sit amet, **consectetur adipisicing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. *Ut enim ad minim* veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+
+.. index:: Headings; rubric examples
+
+Rubric
+------
+
+.. rubric:: This is an example rubric
+
+
+.. index:: Paragraphs; paragraphs examples
+
+Paragraphs
+==========
+
+Duis **aute irure dolor** in *reprehenderit* in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+`Lorem ipsum`_ dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat `cupidatat`_ non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+.. _footnotes:
+
+.. index:: Footnotes; footnotes examples
+
+Footnotes
+=========
+
+.. target-notes::
+
+.. _Lorem ipsum: http://www.google.com
+.. _`cupidatat`: http://docutils.sourceforge.net/rst.html
+
+
+.. index:: Lists; lists examples
+
+Lists
+=====
+
+Unordered list
+--------------
+
+- Lorem ipsum
+- Dolor sit amet
+
+  - Dolor
+  - Sit
+  - Amet
+
+- Consectetur adipiscing elit
+
+Ordered list
+------------
+
+#. Lorem ipsum
+#. Dolor sit amet
+
+   #. Dolor
+   #. Sit
+   #. Amet
+
+#. Consectetur adipiscing elit
+
+Definition Lists
+----------------
+
+Lorem
+    Lorem ipsum dolor sit amet.
+Ipsum
+    Ipsum dolor amet sit.
+Dolor : classifier
+    Dolor lorem ipsum.
+Sit amet : classifier one : classifier two
+    Sit amet consectetur adipiscing elit.
+
+
+.. index:: Tables; Table examples
+
+Table Styles
+============
+
+Normal rst Table
+----------------
+
+
++----------------------+------------------------------------------------+
+| Header row, column 1 | Header row, column 2                           |
++======================+================================================+
+| body row 1           | Second column of row 1                         |
++----------------------+------------------------------------------------+
+| body row 2           | Second column of row 2                         |
+|                      |                                                |
+|                      | Second line of paragraph                       |
++----------------------+------------------------------------------------+
+| body row 3           | Unordered list:                                |
+|                      |                                                |
+|                      | * Second column of row 3                       |
+|                      | * Second item in bullet list (row 3, column 2) |
++----------------------+------------------------------------------------+
+| \                    | Row 4; column 1 will be empty                  |
++----------------------+------------------------------------------------+
+
+
+Tables using ``table`` directive
+--------------------------------
+
+.. table:: Normal Table
+
+   =========== =========== ===========
+   Header1     Header2     Header3
+   =========== =========== ===========
+   Row 1       Row 1       Row 1
+   Row 2       Row 2       Row 2
+   Row 3       Row 3       Row 3
+   =========== =========== ===========
+
+.. rst-class:: plain
+
+.. table:: Plain Table (no row shading)
+
+   =========== =========== ===========
+   Header1     Header2     Header3
+   =========== =========== ===========
+   Row 1       Row 1       Row 1
+   Row 2       Row 2       Row 2
+   Row 3       Row 3       Row 3
+   =========== =========== ===========
+
+.. rst-class:: centered
+
+.. table:: Centered Table
+
+   =========== =========== ===========
+   Header1     Header2     Header3
+   =========== =========== ===========
+   Row 1       Row 1       Row 1
+   Row 2       Row 2       Row 2
+   Row 3       Row 3       Row 3
+   =========== =========== ===========
+
+.. rst-class:: fullwidth
+
+.. table:: Full Width Table
+
+   =========== =========== ===========
+   Header1     Header2     Header3
+   =========== =========== ===========
+   Row 1       Row 1       Row 1
+   Row 2       Row 2       Row 2
+   Row 3       Row 3       Row 3
+   =========== =========== ===========
+
+
+Using the P-SphinxTheme Table Styling Extension
+-----------------------------------------------
+
+:doc:`P-SphinxTheme Table Styling Extension <api/PSphinxTheme.ext.table_styling>`
+
+
+.. table:: Example
+   :widths: 1 2 3
+   :header-columns: 1
+   :column-alignment: left center right
+   :column-dividers: none single double single
+   :column-wrapping: nnn
+
+   =========== =========== ===========
+   Width x1    Width x2    Width x3
+   =========== =========== ===========
+   Header 1    Center 1    Right 1
+   Header 2    Center 2    Right 2
+   Header 3    Center 3    Right 3
+   =========== =========== ===========
+
+
+The same  Table without the special directives
+
+   =========== =========== ===========
+   Width x1    Width x2    Width x3
+   =========== =========== ===========
+   Header 1    Center 1    Right 1
+   Header 2    Center 2    Right 2
+   Header 3    Center 3    Right 3
+   =========== =========== ===========
+
+
+.. rst-class:: html-toggle
+
+.. _toggle-test-link:
+
+.. index:: Sections; toggleable section examples
+
+Toggleable Section
+==================
+This section is collapsed by default. But if a visitor follows a link to this section or something within it
+(such as :ref:`this <toggle-test-link>`), it will automatically be expanded.
+
+.. rst-class:: html-toggle expanded
+
+Toggleable Subsection
+---------------------
+Subsections can also be marked as toggleable. This one should be expanded by default.
+
+
+.. rst-class:: emphasize-children
+
+.. index:: Sections; emphasized children section examples
+
+Section With Emphasized Children
+================================
+Mainly useful for sections with many long subsections, where a second level of visual dividers would be useful.
+
+Child Section
+-------------
+Should have slightly lighter background, and be indented.
+
+.. rst-class:: html-toggle
+
+Toggleable Subsection
+---------------------
+Test of emphasized + toggleable styles. Should be collapsed by default.
+
+
+
+.. index:: Code; code examples
+
+Code Examples
+=============
+
+.. code-block:: python
+
+  """An example module docstring to show Pygments style."""
+
+  # Some comment.
+
+  import datetime
+  from functools import partial
+
+  number = 123
+  word = 'foo'
+
+
+  class ExampleClass(object):
+      """ An example class docstring to show Pygments style.
+      """
+
+      def __init__(self, arg1, arg2=None, *args, **kwargs):
+          self.attr1 = attr1
+          self.attr2 = attr2 or datetime.datetime.now()
+          for arg in args:
+              print('Argument: '.format(arg))
+          for k, v in kwargs.iteritems():
+              print('Keyword argument named {}: {}'.format(k, v))
+
+      def call_method(self, arg):
+          """ An example method docstring.
+          """
+          if not isinstance(arg, int):
+              raise ValueError('Only ints allowed.')
+          self.attr1 = arg
+
+      @property
+      def example_property(self):
+          """ An example property docstring.
+          """
+          return self.attr1 * 2
+
+
+  def example_function(arg1, arg2=None, *args, **kwargs):
+      """ An example function docstring to show Pygments style.
+      """
+      raise NotImplementedError()
+
+
+
+Example normal code-block:
+
+.. code-block:: python
+
+   def my_function():
+      "just a test"
+      print 8/2
+
+
+.. python-example:: show/hide prompt
+
+   show/hide the >>> and ... prompts and the output and thus make the code copyable.
+
+   .. code-block:: python
+
+      >>> alist = [0, 1, 2, 3, 4, 5]
+      >>> for x_ in alist:
+      ...     print(x_)
+      ...
+      0
+      1
+      2
+      3
+      4
+      5
+      >>>
+
+
+.. index:: Examples; autodoc examples
+
+Autodoc
+-------
+
+.. automodule:: autodoc_example
+   :members:

@@ -1,0 +1,42 @@
+# Python files
+*.py[cod]
+build/
+dist/
+docs/build
+tags
+*.egg-info
+__pycache__/
+
+# C extensions
+*.so
+
+# auto-generated
+MANIFEST
+
+# Backups
+*~
+
+# PyCharm IDE files
+.idea/workspace.xml
+pycharm-debug.egg
+pycharm-debug.py
+.iws
+
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+cover
+.testrepository
+htmlcov
+
+# Temp and status files
+*.db
+.*.swp
+*.log
+*.pid
+pidfile
+.DS_Store
+*.rc
+pip-log.txt
