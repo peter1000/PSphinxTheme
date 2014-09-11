@@ -2,5 +2,6 @@
 
 # install
 Sphinx>=1.2
+LconfPygmentsLexer>=1.0.0
 
 # extras

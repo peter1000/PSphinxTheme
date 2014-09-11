@@ -5,6 +5,26 @@ Release History
 
 .. _whats-new:
 
+Version 1.3.1     2014-09-11
+============================
+
+Features:
+---------
+
+   - added check for Example Admonitions code-block highlighter
+
+      - changed also all `.. code-block:: python` to `.. code-block:: python3`
+
+   - docs: added longer LCONF example
+
+
+Fixes/Other Changes:
+--------------------
+
+   - updated requirements: added LconfPygmentsLexer
+   - small `Makefile` adjustments
+   - small `setup.py` adjustments
+
 
 Version 1.3.0     2014-09-10
 ============================

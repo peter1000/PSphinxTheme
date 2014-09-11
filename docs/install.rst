@@ -12,7 +12,8 @@ Requirements
 
    - for python2 look at the original `cloud_sptheme <https://bitbucket.org/ecollins/cloud_sptheme>`_ by **Eli Collins**
 
-- `Sphinx <http://sphinx-doc.org/>`_ 1.2 or newer.
+- `Sphinx <http://sphinx-doc.org/>`_
+- `LconfPygmentsLexer <https://github.com/peter1000/LconfPygmentsLexer>`_
 
 
 .. index:: P-Sphinx Theme; installation
@@ -56,7 +57,7 @@ To use this theme on `<http://readthedocs.org>`_:
    It should contain a minimum of the following lines::
 
       Sphinx>=1.2
-      PSphinxTheme>=1.3.0
+      PSphinxTheme>=1.3.1
 
    ... as well as any other build requirements for your project's documentation.
 
@@ -99,6 +100,7 @@ The latest copy of this documentation should always be available at: `<http://pa
 If you wish to generate your own copy of the documentation, you will need to:
 
 #. Download the :mod:`!PSphinxTheme` source.
-#. If not already installed - install `Sphinx <http://sphinx-doc.org/>`_ (1.2 or better)
-#. From the `PSphinxTheme` source directory, run ``python setup.py build_sphinx -E``.
+#. If not already installed - install `Sphinx <http://sphinx-doc.org/>`_
+#. If not already installed - install `LconfPygmentsLexer <https://github.com/peter1000/LconfPygmentsLexer>`_
+#. From the `PSphinxTheme` source directory, run ``python3 setup.py build_sphinx -E``.
 #. Once Sphinx is finished, point a web browser to the file :samp:`{SOURCE}/build/sphinx/html/index.html`.

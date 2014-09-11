@@ -9,8 +9,8 @@ PACKAGE = PSphinxTheme
 help:
 	@echo 'Please use: `make <target>` where <target> is one of'
 	@echo '  clean_docs              removes only: `build/sphinx`'
-	@echo '  clean                   clean: FILES:`.coverage, MANIFEST, *.pyc, *.pyo, *.pyd, *.o, *.orig` and DIRS: `*.__pycache__,  *.egg-info`'
-	@echo '  cleanall                clean PLUS remove: DIRS: `build, dist, cover, *._pyxbld` and FILES in MAIN_PACKAGE_PATH: `*.so, *.c` and cython annotate html'
+	@echo '  clean                   clean: FILES:`.coverage, MANIFEST, *.pyc, *.pyo, *.pyd, *.o, *.orig` and DIRS: `*.__pycache__`'
+	@echo '  cleanall                clean PLUS remove: DIRS: `build, dist, cover, *._pyxbld, *.egg-info` and FILES in MAIN_PACKAGE_PATH: `*.so, *.c` and cython annotate html'
 	@echo '  docs                    build the docs for the project'
 	@echo '  build_force             build the project: force re-generation of all cython .c files and compile all extension'
 	@echo '  install                 force re-compile and install the package'

@@ -19,7 +19,7 @@ For example, the following snippet specifies a simple `python-example admonition
 
    .. python-example:: Simple Example
 
-      .. code-block:: python
+      .. code-block:: python3
 
          for key in mydict:
             print(key)
@@ -28,7 +28,7 @@ depending on other options it renders to:
 
 .. python-example:: Simple Example
 
-   .. code-block:: python
+   .. code-block:: python3
 
       for key in mydict:
          print(key)
@@ -40,7 +40,7 @@ The next example has at **the left side** a hide show prompt toggle::
 
    .. python-example:: Simple Example
 
-      .. code-block:: python
+      .. code-block:: python3
 
          >>> mylist = ['red', 'blue', 'green']
          >>> print(mylist[2])
@@ -51,7 +51,7 @@ it renders to:
 
 .. python-example:: Simple Example
 
-   .. code-block:: python
+   .. code-block:: python3
 
       >>> mylist = ['red', 'blue', 'green']
       >>> print(mylist[2])
@@ -92,14 +92,19 @@ Adds *additional* Admonitions
 ``.. example::``
 
 ``.. python-example::``
+   required highlighter: ``.. code-block:: python3``
 
 ``.. shell-example::``
+   required highlighter: ``.. code-block:: sh``
 
 ``.. javascript-example::``
+   required highlighter: ``.. code-block:: javascript``
 
 ``.. json-example::``
+   required highlighter: ``.. code-block:: json``
 
 ``.. lconf-example::``
+   required highlighter: ``.. code-block:: lconf``
 
 
 Related Options
@@ -119,6 +124,8 @@ from sphinx.util.compat import (
    Directive,
    make_admonition,
 )
+
+from PSphinxTheme.utils import Err
 
 
 class PSphinxAdmonition(Directive):
@@ -159,6 +166,61 @@ class PSphinxAdmonition(Directive):
          ret[0].insert(1, para)
 
       return ret
+
+
+class PSphinxExampleCheckedAdmonition(Directive):
+   """ Example Admonitions for the P-SphinxTheme.
+   """
+   node_class = None
+   label = ''
+   code_block_highlighter_to_check = ''
+
+   required_arguments = 0
+   optional_arguments = 1
+   has_content = True
+   final_argument_whitespace = True
+   option_spec = {}
+
+   def run(self):
+      # noinspection PyUnresolvedReferences
+      """ run
+      :return:
+      """
+      if self.code_block_highlighter_to_check not in self.block_text:
+         raise Err('PSphinxExampleCheckedAdmonition.run', [
+            'Did not find required code-block directive: <{}>'.format(self.code_block_highlighter_to_check),
+            '',
+            ' -------------------- block_text START --------------------',
+            '',
+            '',
+            self.block_text,
+            '',
+            '',
+            ' -------------------- block_text END --------------------'
+            ])
+
+      ret = make_admonition(
+         self.node_class,
+         self.name,
+         [self.label],
+         self.options,
+         self.content,
+         self.lineno,
+         self.content_offset,
+         self.block_text,
+         self.state,
+         self.state_machine
+      )
+
+      if self.arguments:
+         argnodes, msgs = self.state.inline_text(self.arguments[0], self.lineno)
+         para = nodes.paragraph()
+         para += argnodes
+         para += msgs
+         ret[0].insert(1, para)
+
+      return ret
+
 
 
 def visit_psphinx_node(self, node):
@@ -324,39 +386,44 @@ class ExampleAdmonition(PSphinxAdmonition):
    label = 'Example'
 
 
-class PythonExampleAdmonition(PSphinxAdmonition):
+class PythonExampleAdmonition(PSphinxExampleCheckedAdmonition):
    """ PythonExampleAdmonition
    """
    node_class = PythonExampleNode
    label = 'Python-Example'
+   code_block_highlighter_to_check = '.. code-block:: python3'
 
 
-class ShellExampleAdmonition(PSphinxAdmonition):
+class ShellExampleAdmonition(PSphinxExampleCheckedAdmonition):
    """ ShellExampleAdmonition
    """
    node_class = ShellExampleNode
    label = 'Shell-Example'
+   code_block_highlighter_to_check = '.. code-block:: sh'
 
 
-class JavaScriptExampleAdmonition(PSphinxAdmonition):
+class JavaScriptExampleAdmonition(PSphinxExampleCheckedAdmonition):
    """ JavaScriptExampleAdmonition
    """
    node_class = JavaScriptExampleNode
    label = 'JavaScript-Example'
+   code_block_highlighter_to_check = '.. code-block:: javascript'
 
 
-class JsonExampleAdmonition(PSphinxAdmonition):
+class JsonExampleAdmonition(PSphinxExampleCheckedAdmonition):
    """ JsonExampleAdmonition
    """
    node_class = JsonExampleNode
    label = 'Json-Example'
+   code_block_highlighter_to_check = '.. code-block:: json'
 
 
-class LconfExampleAdmonition(PSphinxAdmonition):
+class LconfExampleAdmonition(PSphinxExampleCheckedAdmonition):
    """ LconfExampleAdmonition
    """
    node_class = LconfExampleNode
    label = 'LCONF-Example'
+   code_block_highlighter_to_check = '.. code-block:: lconf'
 
 
 # ===========================================================================================================================
