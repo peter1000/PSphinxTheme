@@ -43,17 +43,28 @@ If you wish to generate your own copy of the documentation, you will need to:
    {SOURCE}/build/sphinx/html/index.html
 
 
-Projects using PSphinxTheme
-===========================
-
-Known `projects` which make use of: **PSphinxTheme**
-
-
 Online Resources
 ================
 - Docs:       http://packages.python.org/PSphinxTheme
 - PyPI:       http://pypi.python.org/pypi/PSphinxTheme
 - Source:     https://github.com/peter1000/PSphinxTheme
+
+Related Resources
+-----------------
+- LconfPygmentsLexer: `<https://github.com/peter1000/LconfPygmentsLexer>`_ a simple pygments lexer for LCONF
+
+
+Projects using PSphinxTheme
+===========================
+
+Known `projects` which make use of: **PSphinxTheme**
+
+- `PySpeedIT <https://github.com/peter1000/PySpeedIT>`_
+   A collection of: Benchmark-IT, Profile-IT, Line-Memory-Profile-IT, Disassemble-IT.
+
+- `LCONF <https://github.com/peter1000/LCONF>`_
+   L(ight) CONF(iguration): A light - human-friendly, simple readable data serialization format for dynamic configuration.
+
 
 |
 |

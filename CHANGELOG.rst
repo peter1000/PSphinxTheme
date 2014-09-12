@@ -5,6 +5,21 @@ Release History
 
 .. _whats-new:
 
+Version 1.3.2     2014-09-12
+============================
+
+Features:
+---------
+
+Fixes/Other Changes:
+--------------------
+
+   - fixed to long line in docs
+   - changed the background color for: example-admonitions
+   - removed info on using the theme with: ReadTheDocs
+   - adjusted: README.rst
+
+
 Version 1.3.1     2014-09-11
 ============================
 

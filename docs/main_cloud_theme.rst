@@ -441,27 +441,27 @@ Admonitions & deprecated / todo
 
 ``admonition_example_color``
    (color): Sets the background color for the *P-Sphinx Theme* admonition ``example``.
-   (defaults to ``admonition_example_color = #e5ffe8``).
+   (defaults to ``admonition_example_color = #d1ffd6``).
 
 ``admonition_python_example_color``
    (color): Sets the background color for the *P-Sphinx Theme* admonition ``python-example``.
-   (defaults to ``admonition_python_example_color = #e5ffe8``).
+   (defaults to ``admonition_python_example_color = #d1ffd6``).
 
 ``admonition_shell_example_color``
    (color): Sets the background color for the *P-Sphinx Theme* admonition ``shell-example``.
-   (defaults to ``admonition_shell_example_color = #e5ffe8``).
+   (defaults to ``admonition_shell_example_color = #d1ffd6``).
 
 ``admonition_javascript_example_color``
    (color): Sets the background color for the *P-Sphinx Theme* admonition ``javascript-example``.
-   (defaults to ``admonition_javascript_example_color = #e5ffe8``).
+   (defaults to ``admonition_javascript_example_color = #d1ffd6``).
 
 ``admonition_json_example_color``
    (color): Sets the background color for the *P-Sphinx Theme* admonition ``json-example``.
-   (defaults to ``admonition_json_example_color = #e5ffe8``).
+   (defaults to ``admonition_json_example_color = #d1ffd6``).
 
 ``admonition_lconf_example_color``
    (color): Sets the background color for the *P-Sphinx Theme* admonition ``lconf-example``.
-   (defaults to ``admonition_lconf_example_color = #e5ffe8``).
+   (defaults to ``admonition_lconf_example_color = #fff0c7``).
 
 
 **seealso:** the *P-Sphinx Theme extension* :doc:`All official P-SphinxTheme admonitions <api/PSphinxTheme.ext.psphinx_admonitions>`

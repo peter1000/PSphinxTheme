@@ -107,7 +107,24 @@ Online Resources
    Download & PyPI:       `<http://pypi.python.org/pypi/PSphinxTheme>`_
    ====================== ===============================================
 
+
+Related Resources
+-----------------
+
+.. rst-class:: html-plain-table
+
+   =================== ==================================================== ================================================
+   LconfPygmentsLexer: `<https://github.com/peter1000/LconfPygmentsLexer>`_ a simple pygments lexer for LCONF
+   =================== ==================================================== ================================================
+
+
 Projects using PSphinxTheme
 ===========================
 
 Known `projects` which make use of: **PSphinxTheme**
+
+- `PySpeedIT <https://github.com/peter1000/PySpeedIT>`_
+   A collection of: Benchmark-IT, Profile-IT, Line-Memory-Profile-IT, Disassemble-IT.
+
+- `LCONF <https://github.com/peter1000/LCONF>`_
+   L(ight) CONF(iguration): A light - human-friendly, simple readable data serialization format for dynamic configuration.

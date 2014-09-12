@@ -338,7 +338,7 @@ Admonition Styles
                      # Comment-Line:  Block-Name: and defining an empty list: block-item_key2_list
                      Nested Block Name2
                         - block-item_key2_list ::
-                        # Comment-Line:  block-item_key3_list: `List-Of-Lists`: defining an empty list: just skip any item lines
+                        # Comment-Line:  block-item_key3_list: `List-Of-Lists`: to define an empty list: skip any item lines
                         - block-item_key3_list |name|height_cm|weight_kg|
 
             # Comment-Line: Block-Item `Key-Value-Lists`
@@ -390,7 +390,6 @@ Topics
 
    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
    aliqua.
-
 
 
 .. index:: Headings; headers examples
