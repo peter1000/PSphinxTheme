@@ -1,10 +1,7 @@
 /*
  * 
- * peter1000: taken from Sphinx (1.3a0dev-20140821)
+ * peter1000: taken from Sphinx (1.2.3-20140913)
  *   removed all !important
- * 
- * basic.css
- * ~~~~~~~~~
  *
  * Sphinx stylesheet -- basic theme.
  *
@@ -53,7 +50,7 @@ div.sphinxsidebarwrapper {
 
 div.sphinxsidebar {
     float: left;
-    width: 230px;
+    width: {{ theme_sidebarwidth|toint }}px;
     margin-left: -100%;
     font-size: 90%;
 }
@@ -410,10 +407,6 @@ dl.glossary dt {
     font-size: 1.3em;
 }
 
-.sig-paren {
-    font-size: larger;
-}
-
 .versionmodified {
     font-style: italic;
 }
@@ -479,36 +472,22 @@ table.highlighttable td {
     padding: 0 0.5em 0 0.5em;
 }
 
-div.code-block-filename {
-    padding: 2px 5px;
-    font-size: small;
-}
-
-div.code-block-filename code {
-    background-color: transparent;
-}
-
-div.code-block-filename + pre,
-div.code-block-filename + div.highlight > pre {
-    margin-top: 0;
-}
-
-code.descname {
+tt.descname {
     background-color: transparent;
     font-weight: bold;
     font-size: 1.2em;
 }
 
-code.descclassname {
+tt.descclassname {
     background-color: transparent;
 }
 
-code.xref, a code {
+tt.xref, a tt {
     background-color: transparent;
     font-weight: bold;
 }
 
-h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+h1 tt, h2 tt, h3 tt, h4 tt, h5 tt, h6 tt {
     background-color: transparent;
 }
 

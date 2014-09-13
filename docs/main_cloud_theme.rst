@@ -167,10 +167,10 @@ Sidebar Layout
 ``stickysidebar``
    (true or false): Sets whether the sidebar should "stay in view" as the page is scrolled, otherwise it will stay fix at the
    original position. (defaults to ``stickysidebar = true``)
-   
-   .. note:: 
-   
-      if the `sidebar` has more entries than what can be displayed in the current window view, it will not "stay in view" 
+
+   .. note::
+
+      if the `sidebar` has more entries than what can be displayed in the current window view, it will not "stay in view"
       even if ``stickysidebar`` is set to true.
 
 ``collapsiblesidebar``
@@ -320,6 +320,59 @@ Code Blocks
 ``code_boarder_color``
    (color): Sets the boarder color for code blocks.
    (defaults to ``code_boarder_color = #AACC99``).
+
+.. index:: Docstrings; code docstrings options, Options; code docstrings options
+
+Docstrings
+``````````
+``docstring_descclassname_color``
+   (color): Sets the background color for code `docstring descclassname` part.
+   (defaults to ``docstring_descclassname_color = transparent``).
+
+``docstring_descclassname_font_weight``
+   (font-weight): Sets the font weight for code `docstring descclassname` part.
+   (defaults to ``docstring_descclassname_font_weight = normal``).
+
+   .. note:: `font-weight`
+
+      ::
+
+         normal
+         bold
+         bolder
+         lighter
+         100
+         200
+         300
+         400 (400 is the same as normal)
+         500
+         600
+         700 (700 is the same as bold)
+         800
+         900
+
+
+``docstring_descclassname_font_size``
+   (*em*: a float): Sets the code `docstring descclassname` part height in ``em``.
+   (defaults to ``docstring_descclassname_font_size = 1.1``).
+
+   .. note:: `em`
+
+      An `em` is a unit in the field of typography, equal to the currently specified point size.
+      1em is equal to the current font size. 2em means 2 times the size of the current font. E.g., if an element is
+      displayed with a font of 12 pt, then '2em' is 24 pt.
+
+``docstring_descname_color``
+   (color): Sets the background color for code `docstring descname` part.
+   (defaults to ``docstring_descname_color = rgba(242, 242, 242, 0.5)``).
+
+``docstring_descname_font_weight``
+   (font-weight): Sets the font weight for code `docstring descclassname` part.
+   (defaults to ``docstring_descname_font_weight = normal``).
+
+``docstring_descname_font_size``
+   (*em*: a float): Sets the code `docstring descname` part height in ``em``.
+   (defaults to ``docstring_descname_font_size = 1.2``).
 
 
 .. index:: Literals; literals / quoted text options, Options; literals / quoted text options

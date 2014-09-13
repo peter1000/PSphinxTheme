@@ -1,7 +1,7 @@
 # setup
 
 # install
-Sphinx>=1.2
+Sphinx==1.2.3
 LconfPygmentsLexer>=1.0.0
 
 # extras

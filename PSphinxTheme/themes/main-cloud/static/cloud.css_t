@@ -1458,6 +1458,26 @@ div.highlight-python3 pre
 }
 
 {% endif %}
+
+
+/*****************************************************
+ * DOCSTRING: code line  parts
+ * descclassname / descname
+ *****************************************************/
+
+tt.descclassname {
+   background-color: {{ theme_docstring_descclassname_color }};
+   font-weight: {{ theme_docstring_descclassname_font_weight }};
+   font-size: {{ theme_docstring_descclassname_font_size }}em;
+}
+
+tt.descname {
+   background-color: {{ theme_docstring_descname_color }};
+   font-weight: {{ theme_docstring_descname_font_weight }};
+   font-size: {{ theme_docstring_descname_font_size }}em;
+}
+
+
 /*****************************************************
  * EOF
  *****************************************************/

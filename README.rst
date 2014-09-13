@@ -15,7 +15,7 @@ Requirements
 
    - for python2 look at the original `cloud_sptheme <https://bitbucket.org/ecollins/cloud_sptheme>`_ by **Eli Collins**
 
-- `Sphinx <http://sphinx-doc.org/>`_
+- `Sphinx <http://sphinx-doc.org/>`_  for version see {SOURCE}/requirements.txt
 - `LconfPygmentsLexer <https://github.com/peter1000/LconfPygmentsLexer>`_
 
 

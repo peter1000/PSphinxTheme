@@ -5,6 +5,34 @@ Release History
 
 .. _whats-new:
 
+Version 1.3.3     2014-09-13
+============================
+
+Features:
+---------
+
+   - added css styling option for docstrings classes: descclassname / descname
+
+      - ``docstring_descclassname_color``
+      - ``docstring_descclassname_font_weight``
+      - ``docstring_descclassname_font_size``
+
+      - ``docstring_descname_color``
+      - ``docstring_descname_font_weight``
+      - ``docstring_descname_font_size``
+
+
+Fixes/Other Changes:
+--------------------
+
+   - FIXES: :issue:`2`.
+
+      - `requirement.txt`: adjusted Sphinx to exact version 1.2.3
+
+   - replaced: `basic.css_t` with an version based on Sphinx-1.2.3
+   - adjusted all theme
+
+
 Version 1.3.2     2014-09-12
 ============================
 
