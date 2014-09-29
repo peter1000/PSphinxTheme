@@ -5,6 +5,15 @@ Release History
 
 .. _whats-new:
 
+Version 1.3.4     2014-09-29
+============================
+
+Fixes/Other Changes:
+--------------------
+
+   - updated: Projects using PSphinxTheme
+
+
 Version 1.3.3     2014-09-13
 ============================
 

@@ -128,3 +128,9 @@ Known `projects` which make use of: **PSphinxTheme**
 
 - `LCONF <https://github.com/peter1000/LCONF>`_
    L(ight) CONF(iguration): A light - human-friendly, simple readable data serialization format for dynamic configuration.
+
+- `JqPyCharts <https://github.com/peter1000/JqPyCharts>`_
+   `JqPyCharts` is a selection of: Javascripts / Css for simple charts in python projects.
+
+- `HealthNutritionPlanner <https://github.com/peter1000/HealthNutritionPlanner>`_
+   Plan: weight loss, healthy diets, meals.
