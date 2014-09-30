@@ -17,14 +17,14 @@ Functions
 
 """
 from inspect import (
-   getfile,
-   currentframe
+   getfile as inspect_getfile,
+   currentframe as inspect_currentframe,
 )
 from os import listdir
 from os.path import (
-   abspath,
-   dirname,
-   isfile,
+   abspath as path_abspath,
+   dirname as path_dirname,
+   isfile as path_isfile,
    join as path_join,
 )
 
@@ -75,7 +75,7 @@ def set_psphinxtheme(name):
    needs_sphinx = '1.2'
    html_theme_path = path_join(get_psphinxtheme_root_dir(), 'themes')
    html_theme = ''
-   if not isfile(path_join(html_theme_path, name, 'theme.conf')):
+   if not path_isfile(path_join(html_theme_path, name, 'theme.conf')):
       raise Err('Utils.set_psphinxtheme()', [
             'name: <{}> seems not to be a valid `PSphinxTheme`: <{}>'.format(name, listdir(html_theme_path))
          ]
@@ -88,11 +88,11 @@ def set_psphinxtheme(name):
 def get_psphinxtheme_root_dir():
    """ :return: (str) path of the *P-SphinxTheme* root dir
    """
-   return dirname(abspath(getfile(currentframe())))
+   return path_dirname(path_abspath(inspect_getfile(inspect_currentframe())))
 
 
 def is_cloud_theme(name):
    """ :return: (bool) True if name is a valid *P-SphinxTheme* theme name.
    """
    html_theme_path = path_join(get_psphinxtheme_root_dir(), 'Themes')
-   return isfile(path_join(html_theme_path, name, 'theme.conf'))
+   return path_isfile(path_join(html_theme_path, name, 'theme.conf'))

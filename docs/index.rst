@@ -49,6 +49,16 @@ Themes
 **p-greencloud:** a derivation of the `main-cloud theme`
 
 
+.. index:: sphinx theme; p-greenblue
+
+**p-greenblue:** a derivation of the `main-cloud theme`
+
+
+.. index:: sphinx theme; p-greycreme
+
+**p-greycreme:** a derivation of the `main-cloud theme`
+
+
 .. index:: sphinx theme; p-redcloud
 
 **p-redcloud:** a derivation of the `main-cloud theme` used for this documentation

@@ -154,15 +154,15 @@ relbar_links_doc = [
 # modify logo per page: using: P-Sphinx Theme extension: sidebarlogo_perpag
 sidebarlogo_perpage_dict = {
    None: [
-      'index', 
-      'api', 
+      'index',
+      'api',
       'copyright'
    ],
    'P-SphinxTheme180_95cloud.png': [
-      'RequiredSoftware', 
-      'install', 
-      'history', 
-      'py-modindex', 
+      'RequiredSoftware',
+      'install',
+      'history',
+      'py-modindex',
       'genindex',
       'main_cloud_theme',
    ],

@@ -16,10 +16,10 @@ from os import (
    walk as os_walk,
 )
 from os.path import (
-   abspath,
-   dirname,
+   abspath as path_abspath,
+   dirname as path_dirname,
    exists as path_exists,
-   isfile,
+   isfile as path_isfile,
    join as path_join,
    splitext as path_splitext,
 )
@@ -47,9 +47,9 @@ versioneer.parentdir_prefix = 'PSphinxTheme-'  # dirname like 'PSphinxTheme-1.1.
 
 _version = versioneer.get_version()
 
-SCRIPT_PATH = dirname(abspath(getfile(currentframe())))
+SCRIPT_PATH = path_dirname(path_abspath(getfile(currentframe())))
 PACKAGE_NAME = 'PSphinxTheme'
-ROOT_PACKAGE_PATH = path_join(dirname(SCRIPT_PATH), PACKAGE_NAME)
+ROOT_PACKAGE_PATH = path_join(path_dirname(SCRIPT_PATH), PACKAGE_NAME)
 MAIN_PACKAGE_PATH = path_join(ROOT_PACKAGE_PATH, PACKAGE_NAME)
 
 from PSphinxTheme import TESTED_HOST_OS
@@ -150,7 +150,7 @@ class CleanCommand(Command):
                   if tmp_ext == '.pyx':
                      # Check if we have a html with the same name
                      check_html_path = path_join(root, tmp_name + '.html')
-                     if isfile(check_html_path):
+                     if path_isfile(check_html_path):
                         remove_files.append(check_html_path)
 
       # do the general clean

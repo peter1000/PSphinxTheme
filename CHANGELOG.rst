@@ -5,6 +5,22 @@ Release History
 
 .. _whats-new:
 
+Version 1.4.0     2014-09-30
+============================
+
+Features:
+---------
+
+   - added new theme: `p-greenblue`
+
+
+Fixes/Other Changes:
+--------------------
+
+   - updated some imports to be more consistent with the coding style
+   - removed some unused files
+
+
 Version 1.3.4     2014-09-29
 ============================
 
@@ -291,6 +307,7 @@ Fixes/Other Changes:
       - table_styling.py class_option_list() had an error: Unresolved reference for `directive`
 
    - number of undocumented changes / additions
+
 
 Project start 2014-08-06
 ========================
