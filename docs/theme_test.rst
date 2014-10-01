@@ -23,7 +23,7 @@ Inline literal: ``literal text``
 
 ... and it will be rendered as:
 
-   :samp:`this is a {variable}, these are a literal \\{ and \\}``
+   :samp:`this is a {variable}, these are a literal \\{ and \\}`
 
 .. important:: To embed a literal ``{``
 
