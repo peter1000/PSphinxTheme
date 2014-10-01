@@ -4,12 +4,14 @@
 """
 .. index:: Extensions; psphinx_admonitions
 
-=============================================================================
-PSphinxTheme.ext.psphinx_admonitions - all official P-SphinxTheme admonitions
-=============================================================================
+====================================
+PSphinxTheme.ext.psphinx_admonitions
+====================================
 
 Overview
 ========
+**all official P-SphinxTheme admonitions**
+
 This Sphinx extension is a collection of all *official P-SphinxTheme admonitions*
 
 

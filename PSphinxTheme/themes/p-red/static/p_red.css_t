@@ -1,15 +1,15 @@
 /*****************************************************
- * redcloud.css_t
+ * p_red.css_t
  * ~~~~~~~~~~~
  *
- * stylesheet for "RedCloud" theme for Sphinx.
+ * adjusted from stylesheet for "RedCloud" theme for Sphinx.
  *
  * :copyright: Copyright 2012 by Assurance Technologies
  * :license: BSD
  *
  *****************************************************/
 
-@import url("cloud.css");
+@import url("p_sphinx_theme.css");
 
 {#
 div.highlight pre,

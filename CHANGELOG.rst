@@ -5,6 +5,41 @@ Release History
 
 .. _whats-new:
 
+Version 2.0.0     2014-10-01
+============================
+
+Features:
+---------
+
+   .. note::
+
+      `PSphinxTheme 2.0.0` is not backwards compatible (raise version to 2 to reflect that)
+
+         - renamed: function `utils.is_cloud_theme` to `is_p_sphinx_theme`
+
+         - renamed: themes
+
+            - `main-cloud` to `p-main_theme`
+            - `p-greencloud` to `p-green`
+            - `p-redcloud` to `p-red`
+
+         - renamed:
+
+            - `cloud.js_t` to `p_sphinx_theme.js_t`
+            - `cloud.css_t` to `p_sphinx_theme.css_t`
+            - `redcloud.css_t` to `p_red.css_t`
+
+         - many of other name adjustments
+
+
+Fixes/Other Changes:
+--------------------
+
+   - FIXES: Error in example of: PSphinxTheme.ext.escaped_samp_literals :issue:`3`
+   - added more examples of usage of extensions within docstring
+   - FIXES: some other documentation errors
+
+
 Version 1.4.0     2014-09-30
 ============================
 

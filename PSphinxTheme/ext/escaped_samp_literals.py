@@ -1,26 +1,31 @@
 """
 .. index:: Extensions; escaped_samp_literals
 
-==========================================================================================
-PSphinxTheme.ext.escaped_samp_literals - permits escaped bracket characters in *samp* role
-==========================================================================================
+======================================
+PSphinxTheme.ext.escaped_samp_literals
+======================================
 
 Overview
 ========
+**permits escaped bracket characters in "samp" role**
+
 This extension modifies how ``:samp:`` literals are parsed, replacing the default Sphinx parser with an alternate one that
 allows embedding literal ``{`` and ``}`` characters within the content, as well providing stricter input validation.
 
 
 .. index:: Literals; escaped_samp_literals usage example, Usage; extension: escaped_samp_literals usage example
 
+.. important:: To embed a literal ``{``
 
-To embed a literal ``{``, just use a double-backslash, e.g::
+   **within normal docs** just use a `double-backslash` to escape it
 
-   :samp:`this is a {variable}, these are a literal \\{ and \\}`
+   **within docstrings** one needs `triple-backslash` to escape it
 
-... and it will be rendered as:
 
-   :samp:`this is a {variable}, these are a literal \\{ and \\}`
+... using `triple-backslash` to escape it and it will be rendered as:
+
+   :samp:`this is a {variable}, these are a literal \\\{ and \\\}`
+
 
 Internals
 =========

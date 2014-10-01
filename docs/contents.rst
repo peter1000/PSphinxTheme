@@ -7,7 +7,7 @@ Table Of Contents
    Front Page <index>
    install
 
-   main_cloud_theme
+   main_theme
    theme_test
 
    api

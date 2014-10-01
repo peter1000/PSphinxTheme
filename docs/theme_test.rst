@@ -11,20 +11,25 @@ everything is displaying correctly.
 
 .. index:: Literals; literals example, Examples; literals / quoted text options
 
-
 Inline Text
 ===========
 Inline literal: ``literal text``
 
+"samp literal" with **literal variable** using the *P-Sphinx Theme extension* :mod:`~PSphinxTheme.ext.escaped_samp_literals`
 
-samp literal with **literal variable** using the *P-Sphinx Theme extension* :mod:`~PSphinxTheme.ext.index_styling`::
+.. code-block:: text
 
-   :samp:`this is a {variable}`
+   :samp:`this is a {variable}, these are a literal \\{ and \\}`
 
 ... and it will be rendered as:
 
-   :samp:`this is a {variable}`
+   :samp:`this is a {variable}, these are a literal \\{ and \\}``
 
+.. important:: To embed a literal ``{``
+
+   **within normal docs** just use a `double-backslash` to escape it
+
+   **within docstrings** one needs `triple-backslash` to escape it
 
 
 .. index:: Examples; external references / diverse options

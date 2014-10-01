@@ -74,13 +74,13 @@ some included fonts: https://www.google.com/fonts (Apache License, version 2.0)
 
 Tango Icon Project
 ------------------
-Some of the icons in ``PSphinxTheme:/themes/main-cloud/static`` are from the
+Some of the icons in ``PSphinxTheme:/themes/p-main_theme/static`` are from the
 `Tango Icon Project <http://tango.freedesktop.org/>`_, which has released them into the Public Domain.
 
 
 flaticon Icons
 --------------
-Some of the icons in ``PSphinxTheme:/themes/main-cloud/static`` are from `flaticon <http://www.flaticon.com/>`_
+Some of the icons in ``PSphinxTheme:/themes/p-main_theme/static`` are from `flaticon <http://www.flaticon.com/>`_
 which are release under:
 
 Creative Commons (Attribution 3.0 Unported) License

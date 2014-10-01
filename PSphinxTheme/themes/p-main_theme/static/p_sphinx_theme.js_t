@@ -1,5 +1,5 @@
 /* ~~~~~~~~~~~~~~
- * cloud.js_t
+ * p_sphinx_theme.js_t
  * ~~~~~~~~~~~~~~
  *
  * Peter1000: Changes:
@@ -104,7 +104,7 @@ $(document).ready(function (){
       // bind toggle callback
       header.click(function (){
          set_state(!section.hasClass("expanded"));
-         $(window).trigger('cloud-section-toggled', section[0]);
+         $(window).trigger('p-theme-section-toggled', section[0]);
       });
 
       // open section if user jumps to it from w/in page
@@ -153,7 +153,7 @@ $(document).ready(function (){
       hide_btn.show();
       show_btn.hide();
       $.cookie("sidebar", "expanded", copts);
-      $(window).trigger("cloud-sidebar-toggled", false);
+      $(window).trigger("p-theme-sidebar-toggled", false);
    });
 
    hide_btn.click(function (){
@@ -161,7 +161,7 @@ $(document).ready(function (){
       show_btn.show();
       hide_btn.hide();
       $.cookie("sidebar", "collapsed", copts);
-      $(window).trigger("cloud-sidebar-toggled", true);
+      $(window).trigger("p-theme-sidebar-toggled", true);
    });
 
    var state = $.cookie("sidebar");
@@ -257,7 +257,7 @@ $(document).ready(function (){
 
    // run function now, and every time window scrolls
    update_measurements();
-   $(window).scroll(update_sticky).resize(update_measurements).bind('cloud-section-toggled', update_measurements);
+   $(window).scroll(update_sticky).resize(update_measurements).bind('p-theme-section-toggled', update_measurements);
 });
 
 {% endif %}
@@ -371,8 +371,8 @@ _global_toc_loop:
    // TODO: disable when sidebar isn't sticky (including when window is too small) and when sidebar is collapsed / invisible
    update_collapsed_sections();
    $(window).scroll(update_visible_sections).resize(update_visible_sections)
-      .bind('cloud-section-toggled', update_collapsed_sections)
-      .bind('cloud-sidebar-toggled', update_visible_sections);
+      .bind('p-theme-section-toggled', update_collapsed_sections)
+      .bind('p-theme-sidebar-toggled', update_visible_sections);
 });
 {% endif %}
 
@@ -410,7 +410,7 @@ $(document).ready(function (){
 
    // run function now, and every time window is resized
    layout_header();
-   $(window).resize(layout_header).bind('cloud-sidebar-toggled', layout_header);
+   $(window).resize(layout_header).bind('p-theme-sidebar-toggled', layout_header);
 });
 
 

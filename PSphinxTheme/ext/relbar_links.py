@@ -3,12 +3,14 @@
 """
 .. index:: Extensions; relbar_links
 
-===========================================================
-PSphinxTheme.ext.relbar_links - adds link entries to relbar
-===========================================================
+=============================
+PSphinxTheme.ext.relbar_links
+=============================
 
 Overview
 ========
+**adds link entries to relbar**
+
 This Sphinx extension automatically inserts entries into the navigation bar (relation bar - ``relbar``) at the top and
 bottom of all pages.
 

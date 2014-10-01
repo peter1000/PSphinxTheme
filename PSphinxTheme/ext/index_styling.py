@@ -1,14 +1,16 @@
 """
 .. index:: Extensions; index_styling
 
-==================================================================
-PSphinxTheme.ext.index_styling - improves css styling for genindex
-==================================================================
+==============================
+PSphinxTheme.ext.index_styling
+==============================
 
 Overview
 ========
+**improves css styling for genindex**
+
 This Sphinx extension intercepts & modifies the general index data before it is rendered to html, adding some additional css
-classes to help *P-SphinxTheme* (e.g. :doc:`/main_cloud_theme`) provide additional per-type styling for index entries.
+classes to help *P-SphinxTheme* (e.g. :doc:`/main_theme`) provide additional per-type styling for index entries.
 
 
 Internals

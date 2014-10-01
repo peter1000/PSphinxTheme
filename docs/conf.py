@@ -122,7 +122,7 @@ issue_tracker_url = 'gh:peter1000/PSphinxTheme'
 # ===========================================================================================================================
 
 # set_psphinxtheme: html_theme_path, html_theme, needs_sphinx
-html_theme_path, html_theme, needs_sphinx = set_psphinxtheme('p-redcloud')
+html_theme_path, html_theme, needs_sphinx = set_psphinxtheme('p-red')
 
 # [optional] overwrite some of the default options
 # html_theme_options = {}
@@ -158,13 +158,13 @@ sidebarlogo_perpage_dict = {
       'api',
       'copyright'
    ],
-   'P-SphinxTheme180_95cloud.png': [
+   'P-SphinxTheme180_95_bg.png': [
       'RequiredSoftware',
       'install',
       'history',
       'py-modindex',
       'genindex',
-      'main_cloud_theme',
+      'main_theme',
    ],
 }
 

@@ -1,17 +1,17 @@
-.. index:: P-Sphinx Theme; main sphinx theme, sphinx theme; main-cloud (main theme)
+.. index:: P-Sphinx Theme; main sphinx theme, sphinx theme; p-main_theme (main theme)
 
 
-================================
-"Main-Cloud" master sphinx theme
-================================
+==================================
+"P-MAIN THEME" master sphinx theme
+==================================
 
 
 .. index:: P-Sphinx Theme; features
 
 Features
 ========
-This package provides a theme called "main-cloud" which is the master theme of *P-Sphinx Theme*. A derivative called
-`p-redcloud` is used to generate this documentation.
+This package provides a theme called "p-main_theme" which is the master theme of *P-Sphinx Theme*. A derivative called
+`p-red` is used to generate this documentation.
 
 Aside from being just another Sphinx theme, it has a few special features:
 
@@ -60,7 +60,7 @@ List of Options
 
 .. important::
 
-   Defaults for any additional theme might be different: these below are the one from the ``main-cloud`` theme
+   Defaults for any additional theme might be different: these below are the one from the ``p-main_theme`` theme
 
 Structure
 ---------
@@ -595,7 +595,7 @@ To use the *P-SphinxTheme*, open your documentation's Sphinx ``conf.py`` file, m
    issue_tracker_url = 'gh:peter1000/PSphinxTheme'
 
    # set the: html_theme_path, html_theme, needs_sphinx
-   html_theme_path, html_theme, needs_sphinx = set_psphinxtheme('p-redcloud')
+   html_theme_path, html_theme, needs_sphinx = set_psphinxtheme('p-red')
 
 
    # [optional] overwrite some of the default options listed above...
@@ -614,7 +614,7 @@ To use the *P-SphinxTheme*, open your documentation's Sphinx ``conf.py`` file, m
    # modify logo per page: using: `P-Sphinx Theme extension`: sidebarlogo_perpag
    sidebarlogo_perpage_dict = {
       None: ['api', 'index', 'copyright'],
-      'P-SphinxTheme180_95cloud.png': ['main_cloud_theme', 'history'],
+      'P-SphinxTheme180_95_bg.png': ['main_theme', 'history'],
    }
 
 

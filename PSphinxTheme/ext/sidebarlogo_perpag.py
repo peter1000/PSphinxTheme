@@ -1,12 +1,14 @@
 """
 .. index:: Extensions; sidebarlogo_perpag
 
-===========================================================================
-PSphinxTheme.ext.sidebarlogo_perpag - override sphinx sidebar logo per-page
-===========================================================================
+===================================
+PSphinxTheme.ext.sidebarlogo_perpag
+===================================
 
 Overview
 ========
+**override sphinx sidebar logo per-page**
+
 This extension adds an option to set different sidebar logo per-page.
 
 
@@ -24,14 +26,14 @@ This extension reads the following ``conf.py`` options:
 
       FORMAT:
 
-         - keys: (None or image name string) e.g.: 'P-SphinxTheme180_95cloud.png'
+         - keys: (None or image name string) e.g.: 'P-SphinxTheme180_95_bg.png'
          - value: (list or set of html pages): e.g.: ['index', 'copyright'], set({'index', 'copyright'})
 
 For example, the following snippet uses:
 
    - uses a general sidebar logo: `_static/P-SphinxTheme180_95_logo.png`
    - for the *index page* and the *copyright page*: it does not use any sidebar logo
-   - for the *main_cloud_theme page* and *history*: is uses the sidebar logo `_static/P-SphinxTheme180_95cloud.png`
+   - for the *main_theme page* and *history*: is uses the sidebar logo `_static/P-SphinxTheme180_95_bg.png`
 
 .. index:: Usage; extension: sidebarlogo_perpag usage example
 
@@ -44,7 +46,7 @@ For example, the following snippet uses:
    # modify logo per page: using: P-Sphinx Theme extension: sidebarlogo_perpag
    sidebarlogo_perpage_dict = {
       None: set({'index', 'copyright'}),
-      'P-SphinxTheme180_95cloud.png': set({'main_cloud_theme', 'history'})
+      'P-SphinxTheme180_95_bg.png': set({'main_theme', 'history'})
    }
 """
 

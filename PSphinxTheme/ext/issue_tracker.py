@@ -1,12 +1,14 @@
 """
 .. index:: Extensions; issue_tracker
 
-==============================================================
-PSphinxTheme.ext.issue_tracker - support for `issue` text role
-==============================================================
+==============================
+PSphinxTheme.ext.issue_tracker
+==============================
 
 Overview
 ========
+**support for `issue` text role**
+
 This Sphinx extension adds a new text role, ``:issue:``, which will automatically be converted into links to your project's
 issue tracker.
 

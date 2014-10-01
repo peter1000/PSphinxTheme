@@ -1,12 +1,14 @@
 """
 .. index:: Extensions; table_styling
 
-===================================================================
-PSphinxTheme.ext.table_styling - adds directives for styling tables
-===================================================================
+==============================
+PSphinxTheme.ext.table_styling
+==============================
 
 Overview
 ========
+**adds directives for styling tables**
+
 This Sphinx extension replaces the default ``.. table::`` directive with a custom one, that supports a number of extra
 options for controlling table layout on a per-column basis.
 

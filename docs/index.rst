@@ -8,7 +8,8 @@ Documentation
 This is release |release| of a Python package named :mod:`!PSphinxTheme`.
 *P-Sphinx Theme* stands for *Projects-Sphinx Theme*.
 
-It contains a main `Sphinx <http://sphinx-doc.org/>`_ theme named "p-cloud", and some related Sphinx extensions.
+It contains a main `Sphinx <http://sphinx-doc.org/>`_ theme named "p-main_theme" and some derivation of it, as well as some 
+related Sphinx extensions.
 *P-Sphinx Theme* and its extensions are primarily oriented towards generating html documentation for Python libraries using
 `Python 3`.
 It provides numerous small enhancements to make the *html documentation* more interactive, improve the layout on mobile
@@ -41,27 +42,27 @@ Contents
 Themes
 ------
 
-**main-cloud:** :doc:`P-Sphinx Main Theme <main_cloud_theme>` the main Sphinx theme provided by this package.
+**p-main_theme:** :doc:`P-Sphinx Main Theme <main_theme>` the main Sphinx theme provided by this package.
 
 
-.. index:: sphinx theme; p-greencloud
+.. index:: sphinx theme; p-green
 
-**p-greencloud:** a derivation of the `main-cloud theme`
+**p-green:** a derivation of the `p-main_theme theme`
 
 
 .. index:: sphinx theme; p-greenblue
 
-**p-greenblue:** a derivation of the `main-cloud theme`
+**p-greenblue:** a derivation of the `p-main_theme theme`
 
 
 .. index:: sphinx theme; p-greycreme
 
-**p-greycreme:** a derivation of the `main-cloud theme`
+**p-greycreme:** a derivation of the `p-main_theme theme`
 
 
-.. index:: sphinx theme; p-redcloud
+.. index:: sphinx theme; p-red
 
-**p-redcloud:** a derivation of the `main-cloud theme` used for this documentation
+**p-red:** a derivation of the `p-main_theme theme` used for this documentation
 
 
 Extensions

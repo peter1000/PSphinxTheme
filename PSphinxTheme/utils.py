@@ -13,7 +13,7 @@ Functions
 
 .. autofunction:: get_psphinxtheme_root_dir
 
-.. autofunction:: is_cloud_theme
+.. autofunction:: is_p_sphinx_theme
 
 """
 from inspect import (
@@ -91,7 +91,7 @@ def get_psphinxtheme_root_dir():
    return path_dirname(path_abspath(inspect_getfile(inspect_currentframe())))
 
 
-def is_cloud_theme(name):
+def is_p_sphinx_theme(name):
    """ :return: (bool) True if name is a valid *P-SphinxTheme* theme name.
    """
    html_theme_path = path_join(get_psphinxtheme_root_dir(), 'Themes')
