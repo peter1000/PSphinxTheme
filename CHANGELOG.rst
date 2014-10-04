@@ -5,6 +5,15 @@ Release History
 
 .. _whats-new:
 
+Version 2.0.1     2014-10-04
+============================
+
+Fixes/Other Changes:
+--------------------
+
+   - updated docs: Projects using PSphinxTheme
+
+
 Version 2.0.0     2014-10-01
 ============================
 

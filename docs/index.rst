@@ -143,5 +143,5 @@ Known `projects` which make use of: **PSphinxTheme**
 - `JqPyCharts <https://github.com/peter1000/JqPyCharts>`_
    `JqPyCharts` is a selection of: Javascripts / Css for simple charts in python projects.
 
-- `HealthNutritionPlanner <https://github.com/peter1000/HealthNutritionPlanner>`_
-   Plan: weight loss, healthy diets, meals.
+- `PyNHEP <https://github.com/peter1000/PyNHEP>`_
+   PyNHEP: The N(utrition) and H(ealthy) E(ating) P(lanner).
