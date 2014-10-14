@@ -5,6 +5,15 @@ Release History
 
 .. _whats-new:
 
+Version 2.0.3     2014-10-14
+============================
+
+Fixes/Other Changes:
+--------------------
+
+   - small adjustment/fix in layout.html
+
+
 Version 2.0.2     2014-10-07
 ============================
 
