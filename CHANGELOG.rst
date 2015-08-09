@@ -5,6 +5,15 @@ Release History
 
 .. _whats-new:
 
+Version 2.0.5     2015-08-09
+============================
+
+Fixes/Other Changes:
+--------------------
+
+   - changed requirement to the renamed: `python_lconf_lexer`
+
+
 Version 2.0.4     2015-08-09
 ============================
 
@@ -160,7 +169,7 @@ Features:
 Fixes/Other Changes:
 --------------------
 
-   - updated requirements: added LconfPygmentsLexer
+   - updated requirements: added python_lconf_lexer
    - small `Makefile` adjustments
    - small `setup.py` adjustments
 

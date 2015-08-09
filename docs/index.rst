@@ -125,7 +125,7 @@ Related Resources
 .. rst-class:: html-plain-table
 
    =================== ==================================================== ================================================
-   LconfPygmentsLexer: `<https://github.com/peter1000/LconfPygmentsLexer>`_ a simple pygments lexer for LCONF
+   python_lconf_lexer: `<https://github.com/LCONF/python_lconf_lexer>`_ a simple pygments lexer for LCONF
    =================== ==================================================== ================================================
 
 

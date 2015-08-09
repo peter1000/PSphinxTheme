@@ -16,7 +16,7 @@ Requirements
    - for python2 look at the original `cloud_sptheme <https://bitbucket.org/ecollins/cloud_sptheme>`_ by **Eli Collins**
 
 - `Sphinx <http://sphinx-doc.org/>`_  for version see {SOURCE}/requirements.txt
-- `LconfPygmentsLexer <https://github.com/peter1000/LconfPygmentsLexer>`_
+- `python_lconf_lexer <https://github.com/LCONF/python_lconf_lexer>`_
 
 
 Installation
@@ -36,7 +36,7 @@ If you wish to generate your own copy of the documentation, you will need to:
 
 #. Get the `PSphinxTheme` source.
 #. If not already installed - install `Sphinx <http://sphinx-doc.org/>`_
-#. If not already installed - install `LconfPygmentsLexer <https://github.com/peter1000/LconfPygmentsLexer>`_
+#. If not already installed - install `python_lconf_lexer <https://github.com/LCONF/python_lconf_lexer>`_
 #. From the `PSphinxTheme` source directory, run ``python3 setup.py build_sphinx -E``.
 #. Once Sphinx is finished, point a web browser to the file::
 
@@ -51,7 +51,7 @@ Online Resources
 
 Related Resources
 -----------------
-- LconfPygmentsLexer: `<https://github.com/peter1000/LconfPygmentsLexer>`_ a simple pygments lexer for LCONF
+- python_lconf_lexer: `<https://github.com/LCONF/python_lconf_lexer>`_ a simple pygments lexer for LCONF
 
 
 Projects using PSphinxTheme
