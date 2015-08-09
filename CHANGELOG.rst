@@ -5,6 +5,14 @@ Release History
 
 .. _whats-new:
 
+Version 2.0.4     2015-08-09
+============================
+
+Fixes/Other Changes:
+--------------------
+
+   - updated requirements
+
 Version 2.0.3     2014-10-14
 ============================
 
