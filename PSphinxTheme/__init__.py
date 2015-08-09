@@ -16,5 +16,5 @@ TESTED_HOST_OS = 'Linux Ubuntu 13.10'
 __project_name__ = 'PSphinxTheme'
 __title__ = "A sphinx theme I use for most projects. Derivative of Eli Collins's cloud_sptheme."
 __author__ = '`peter1000` https://github.com/peter1000'
-__copyright__ = '(c) 2014 ' + __author__
+__copyright__ = '(c) 2014, 2015 ' + __author__
 __license__ = 'BSD 3-clause license: Consult LICENSE.rst'
