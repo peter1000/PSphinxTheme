@@ -4,7 +4,7 @@ P-SphinxTheme
 
 About
 =====
-A sphinx theme I use for most projects. Derivative of "Eli Collins's cloud_sptheme".
+A sphinx theme. Derivative of "Eli Collins's cloud_sptheme".
 
 The latest documentation can be found online at `<http://packages.python.org/PSphinxTheme>`_.
 
